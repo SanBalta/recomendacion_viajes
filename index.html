@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!--ENCABEZADO DE PÁGINA-->
+    <nav>
+        <img src="img/img-avion.png" alt="icono_avion" />
+        <h1>Traveling</h1>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="contact-us.html" id="contact-us">Contact Us</a></li>
+            <li><a href="about-us.html" id="about-us">About Us</a></li>
+        </ul>
+
+        <div class="input-wrapper">
+            <input type="text" class="input keyword" id="conditionInput" placeholder="Enter a destination or keyword">
+            <button class="btn-icon-search keyword" id="btnSearch">Search</button>
+            <button class="btn-icon-clear keyword" id="btnClear">Clear</button>
+        </div>
+    </nav>
+
+    <main>
+        <!--MUESTRA RESULTADOS DE BUSQUEDA A TRAVES DE SEARCH-->
+        <div class="row">
+            <div id="result" class="col-3 result"></div> 
+        </div>
+
+        <!--CUERPO DE PÁGINA-->
+        <img class="imagen" src="img/img-background.jpeg" alt="image">
+
+        <div class="row">
+            <div class="col-1 redSocial"><br>
+                <div class="vl"></div>
+                <a href="#"><img src="img/x.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/youtube.png" alt=""></a>
+            </div>
+
+            <div class="col-2 content">
+                <div>
+                    <p class="introduction-1">EXPLORE DREAM DESTINATION</p>
+                    <br><br><br>
+                    <p class="introduction-2">Discover the world with us. At Traveling,
+                        we turn every trip into an unforgettable experience, from weekend
+                        getaways to exotic adventures. Find the best destinations, travel
+                        tips, and personalized offers for your next vacation. Connect with
+                        the excitement of exploring new horizons. Your next adventure starts
+                        here!</p>
+                    <br><br><br>
+                    <button class="btn-reservation">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 15%;}
+.col-2 {width: 40%;}
+.col-3 {width: 450px;}
+
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+nav {
+    background-color: #05245f;
+    opacity: 0.8;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 7px 15px;
+    background-color: #0b1b50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  btn-icon-search:hover {
+    background-color:#112a7c;
+  }
+  btn-icon-clear:hover {
+    background-color:#112a7c;
+  }
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+
+  h1,  ul  li a{
+    color: white;
+  }
+
+.input-wrapper {
+  position: relative;
+  width: 500px;
+}
+
+.input {
+  box-sizing: border-box;
+  border: none;
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.input.keyword {
+  padding: 15px 35px 15px 15px;
+  width: 500px;
+}
+
+.btn-icon-search {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 7px;
+}
+
+.btn-icon-search.keyword {
+  left: unset;
+  right: 90px;
+}
+
+.btn-icon-clear {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 7px;
+}
+
+.btn-icon-clear.keyword {
+  left: unset;
+  right: 12px;
+}
+.imagen{
+  opacity: 0.8 ;
+  width: 100%;
+  position: absolute;
+}
+.row{
+  position: relative;
+}
+.introduction-1{
+  font-weight: bolder;
+  font-size: 47pt;
+  color: white;
+}
+.introduction-2{
+  font-size: 11pt;
+  color: white;
+}
+
+.redSocial ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+.redSocial{
+  height:600px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
+.btn-reservation{
+  opacity: 0.7;
+  background-color: #159e53;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-reservation:hover{
+  background-color: #0a6d37;
+}
+
+.vl {
+  border-left: 3px solid rgb(255, 255, 255);
+  height: 250px;
+}
+.content > div{
+  height:600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.result{
+  position: absolute;
+  z-index: 1;
+  transform:translateX(820px);
+}
+.fnd{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+.text-info{
+  padding: 10px;
+}
+.noFound{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.noFound > img {
+  padding: 15px;
+}
+.visit{
+  margin: 10px 0 5px 0;
+  border-radius: 5px;
+  background-color: #0a6d37;
+}
